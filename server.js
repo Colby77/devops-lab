@@ -24,6 +24,14 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'))
 })
 
+app.get('/css', (req, res) => {
+    res.sendFile(path.join(__dirname, '/styles.css'))
+    // rollbar.info('CSS working')
+})
+
+app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, '/main.js'))
+})
 
 
 // app.get('/api/students', fakeFunction())
