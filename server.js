@@ -34,8 +34,9 @@ app.get('/js', (req, res) => {
     rollbar.info('main.js connected')
 })
 
+app.use(rollbar.errorHandler())
 
-// app.get('/api/students', fakeFunction())
+
 
 const port = process.env.PORT || 4001
 
