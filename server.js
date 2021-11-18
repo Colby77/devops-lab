@@ -31,6 +31,7 @@ app.get('/css', (req, res) => {
 
 app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '/main.js'))
+    rollbar.info('main.js connected')
 })
 
 

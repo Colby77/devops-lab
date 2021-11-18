@@ -1,4 +1,4 @@
-console.log('hello world')
+
 
 let siteBtn = document.getElementById('site-btn')
 let cartCounter = document.getElementById('cart')
