@@ -22,6 +22,7 @@ app.use(cors())
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'))
+    rollbar.info('HTML working')
 })
 
 app.get('/css', (req, res) => {
