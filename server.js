@@ -25,15 +25,15 @@ app.get('/', (req, res) => {
     rollbar.info('HTML working')
 })
 
-app.get('/css', (req, res) => {
-    res.sendFile(path.join(__dirname, '/styles.css'))
-    rollbar.info('CSS working')
-})
+// app.get('/css', (req, res) => {
+//     res.sendFile(path.join(__dirname, '/styles.css'))
+//     rollbar.info('CSS working')
+// })
 
-app.get('/js', (req, res) => {
-    res.sendFile(path.join(__dirname, '/main.js'))
-    rollbar.info('main.js connected')
-})
+// app.get('/js', (req, res) => {
+//     res.sendFile(path.join(__dirname, '/main.js'))
+//     rollbar.info('main.js connected')
+// })
 
 app.use(rollbar.errorHandler())
 
